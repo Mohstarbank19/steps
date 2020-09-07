@@ -1,0 +1,12 @@
+AzureSecret:
+  title: Fetching Azure Secret from Key Vault
+  type: azure-key-vault
+  arguments:
+    AZURE_VAULT_NAME: MY_AZURE_VAULT_NAME
+    SECRETS:
+      - secret_1
+      - secret_2
+      - secret_3
+    AZURE_CLIENT_ID: '${{AZURE_CLIENT_ID}}'
+    AZURE_CLIENT_SECRET: '${{AZURE_CLIENT_SECRET}}'
+    AZURE_TENANT_ID: '${{AZURE_TENANT_ID}}'
